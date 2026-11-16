@@ -1,0 +1,18 @@
+# Security headers for Cloudflare Pages (applies to every page of the portal).
+#
+# EMBEDDING IN WIX: by default the portal can only be shown on its own address.
+# To show it inside the Wix site ("Embed a Site"), add the Wix site's address(es)
+# to frame-ancestors. Example (replace with the real domain, then redeploy):
+#   frame-ancestors 'self' https://www.tinaslittleangels.com https://tinaslittleangels.com https://*.wixsite.com;
+# A plain "Parent Login" link/button from Wix to the portal is simpler and needs no change here.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co; img-src 'self' data: blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000
+  Cache-Control: no-cache
+
+/vendor/*
+  Cache-Control: public, max-age=604800

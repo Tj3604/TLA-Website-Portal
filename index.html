@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Parent Portal · Tina's Little Angels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="demo-bar" class="demo-bar" hidden></div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div id="brand-mark" class="brand-mark" aria-hidden="true">T</div>
+        <div>
+          <p class="brand-name">Tina’s Little Angels</p>
+          <p class="brand-sub">Parent portal</p>
+        </div>
+      </div>
+      <div id="header-user" class="header-user"></div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <div id="app" aria-live="polite">
+      <p class="loading">Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p id="footer-text"></p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="vendor/supabase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
