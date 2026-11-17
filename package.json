@@ -1,0 +1,15 @@
+{
+  "name": "tla-parent-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tina's Little Angels parent portal (static site + Supabase).",
+  "scripts": {
+    "build": "node -e \"console.log('Static site: nothing to build. Files are in ./public')\"",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.156.0"
+  }
+}

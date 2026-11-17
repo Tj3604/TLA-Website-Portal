@@ -18,10 +18,5 @@ window.PORTAL_CONFIG = {
   CENTER_PHONE: "(508) 285-4012",
   CENTER_WEBSITE: "", // e.g. "https://www.tinaslittleangels.com" (shows a "Back to website" link)
   CENTER_ADDRESS: "4 Scott Drive, Norton, MA",
-  LOGO_URL: "",       // e.g. "logo.png" after putting the logo file in this folder. Blank = "T" monogram.
-
-  // Payments (optional). Both links come from Tina's own Stripe account; see SETUP.md Step 8.
-  // Leave blank to hide the Payments section. Only https://...stripe.com links are accepted.
-  STRIPE_BILLING_PORTAL_URL: "", // Settings > Billing > Customer portal > login link, e.g. "https://billing.stripe.com/p/login/abc123"
-  STRIPE_PAYMENT_LINK: ""        // a Payment Link set to "customers choose what to pay", e.g. "https://buy.stripe.com/abc123"
+  LOGO_URL: ""        // e.g. "logo.png" after putting the logo file in this folder. Blank = "T" monogram.
 };
